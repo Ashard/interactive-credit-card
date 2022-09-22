@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 40% auto;
+    height: 100%;
+}
+
+.interactive-card-section {
+    background-image: linear-gradient(#7209B7, rgba(247, 37, 133, 0.65));
+}
+
+.card-front-flex-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-front {
+    background-color: #151515;
+    width: 70%px;
+    height: 302px;
+    max-width: 538px;
+    border-radius: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.card-number-container {
+    display: flex;
+    margin-left: 30px;
+    gap: 25px;
+}
+
+.card-number {
+    /* margin-left: 30px; */
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-top: 137px;
+}
+
+.card-holder-name {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+.card-expiry {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 8px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
