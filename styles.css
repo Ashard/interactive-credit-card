@@ -26,16 +26,7 @@ body {
     align-self: center;
 } 
 
-.card-back-container {
-    display: flex;
-    justify-content: center;
-}
 
-.card-back {
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .card-front-and-back-container {
     display: flex;
@@ -54,10 +45,49 @@ body {
 
 
 .card-number {
-    /* position: absolute; */
-    left: 0px;
     font-size: 24px;
     font-weight: 500;
     color: white;
     letter-spacing: 2px;
+}
+
+
+.card-holder-name {
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    position: absolute;
+    left: 40px;
+    bottom: 70px;
+}
+
+.card-expiry {
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+}
+
+.card-back-container {
+    position: relative;
+    text-align: center;
+    width: fit-content;
+}
+
+.card-back {
+    /* margin-top: 20px; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+}
+
+.cvc {
+    font-size: 24px;
+    font-weight: 500;
+    font-style: italic;
+    position: absolute;
+    left: 403px;
+    top: 159px;
+
 }
