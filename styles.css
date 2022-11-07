@@ -16,48 +16,61 @@ body {
 
 .interactive-card-section {
     background-image: linear-gradient(#280042, rgba(95, 3, 45, 0.9));
-    min-width: 558px;
+        /* min-width: 558px; */
 }
 
 .card-front-container {
-    width: 100%;
-    position: relative;
+    display: flex;
+    align-items: center;
     width: fit-content;
-    align-self: center;
 } 
 
 .card-back-container {
     display: flex;
-    justify-content: center;
+    width: fit-content;
+    align-items: center;
+    justify-content: flex-end;
+    /* justify-content: center; */
 }
 
-.card-back {
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .card-front-and-back-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 100%;
 }
 
 .card-number-container {
-    display: flex;
     position: absolute;
-    top: 142px;
-    left: 40px;
+    display: flex;
+    margin-left: 24px;
     gap: 20px;
 }
 
-
 .card-number {
-    /* position: absolute; */
-    left: 0px;
     font-size: 24px;
     font-weight: 500;
     color: white;
     letter-spacing: 2px;
 }
+
+.cvv {
+    position: absolute;
+    font-size: 20px;
+    font-style: italic;
+    /* justify-self: right; */
+    /* justify-self: flex-st; */
+    /* align-self: flex-start; */
+    /* margin-left: 20%; */
+    margin-top: 20px;
+    margin-right: 7%;
+}
+
+.card-img {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
