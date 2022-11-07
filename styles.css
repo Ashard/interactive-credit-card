@@ -10,7 +10,7 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: 40% auto;
+    grid-template-columns: minmax(435px, 40%) auto;
     height: 100vh;
 }
 
@@ -32,6 +32,7 @@ body {
     justify-content: flex-end;
     /* justify-content: center; */
 }
+
 
 
 .card-front-and-back-container {
