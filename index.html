@@ -11,31 +11,45 @@
     <link rel="stylesheet" href="styles.css"></link>
 </head>
 <body>
-    <div class="grid">
-       <section class="interactive-card-section">
-        <div class="card-front-and-back-container">
-            <div class="card-front-container">
-                <img src="card-front.png" alt="" class="card-front">
-
-                <div class="card-number-container">
-                    <p class="card-number">0000</p>
-                    <p class="card-number">0000</p>
-                    <p class="card-number">0000</p>
-                    <p class="card-number">0000</p>
-                </div>
-                <img src="card-front.png" alt="" class="card-img">
-            </div>
+    <div class="body-column">
+        <div class="grid">
+            <section class="interactive-card-section">
+             <div class="card-front-and-back-container">
+                 <div class="card-front-container">
+                     <div class="card-number-container">
+                         <p class="card-number">0000</p>
+                         <p class="card-number">0000</p>
+                         <p class="card-number">0000</p>
+                         <p class="card-number">0000</p>
+                     </div>
+                     <img src="card-front.png" alt="" class="card-img">
+                 </div>
+         
+                 <div class="card-back-container">
+                     <img src="card-back.png" alt="" class="card-img">
+                     <p class="cvv">145</p>
+                 </div>
+             </div>
+            </section>
+     
+            <section class="user-input-section">
+                <form class="form-column">
+                    <label for="card-holder-name">CARDHOLDER NAME</label>
+                    <input id="card-holder-name" type="text" placeholder="John Doe"/>
     
-            <div class="card-back-container">
-                <img src="card-back.png" alt="" class="card-img">
-                <p class="cvv">145</p>
-            </div>
-        </div>
-       </section>
-
-       <section class="user-input-section">
-        hello
-       </section>
+                    <label for="card-number">CARD NUMBER</label>
+                    <input id="card-number" type="text" inputmode="numeric" placeholder="0000 0000 0000 0000"/>
+    
+                    <label for="card-expiry">CARD EXPIRY (MM/YYYY)</label>
+                    <input id="card-expiry" type="number" placeholder="MM/YYYY"/>
+    
+                    <label for="cvc">CVC</label>
+                    <input id="cvc" placeholder="000"/>
+    
+                    </form>             
+            </section>
+         </div>
     </div>
+   
 </body>
 </html>
