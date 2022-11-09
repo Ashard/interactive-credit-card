@@ -33,23 +33,39 @@
             </section>
      
             <section class="user-input-section">
-                <form class="form-column">
-                    <label for="card-holder-name">CARDHOLDER NAME</label>
-                    <input id="card-holder-name" type="text" placeholder="John Doe"/>
+                <div class="form-container">
+                    <form class="form-column">
+                        <label for="card-holder-name" class="label-text">CARDHOLDER NAME</label>
+                        <input id="card-holder-name" type="text" placeholder="John Doe"/>
+        
+                        <label for="card-number" class="label-text">CARD NUMBER</label>
+                        <input id="card-number" type="text" inputmode="numeric" placeholder="0000 0000 0000 0000"/>
+                        
+
+                        <!-- <div class="card-expiry-and-cvv-container"> -->
+                        
+
+                        <div class="row">
+                            <div class="card-expiry-container">
+                                <label for="card-expiry" class="label-text">CARD EXPIRY (MM/YYYY)</label>
+                                <div class="card-expiry-row-container">
+                                    <input id="card-expiry" class="card-expiry-mm" type="number" placeholder="MM" min="1" max="12"/>          
+                                    <input id="card-expiry" class="card-expiry-yyyy" type="number" placeholder="YYYY" min="2022" max="9999"/>                                   
+                                </div>
+                                
+                            </div>
     
-                    <label for="card-number">CARD NUMBER</label>
-                    <input id="card-number" type="text" inputmode="numeric" placeholder="0000 0000 0000 0000"/>
-    
-                    <label for="card-expiry">CARD EXPIRY (MM/YYYY)</label>
-                    <input id="card-expiry" type="number" placeholder="MM/YYYY"/>
-    
-                    <label for="cvc">CVC</label>
-                    <input id="cvc" placeholder="000"/>
-    
-                    </form>             
+                            <div class="cvc-container">
+                                <label for="cvc" class="label-text">CVC</label>
+                                <input id="cvc" placeholder="000" min="000"/>
+                            </div>
+                        </div>
+
+                        <button class="submit-btn">SUBMIT</button>
+                    </form>      
+                </div>                           
             </section>
          </div>
     </div>
-   
 </body>
 </html>

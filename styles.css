@@ -5,12 +5,15 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    background-color: rgb(211, 211, 211);
 }
 
 .body-column {
     display: flex;
     flex-direction: column;
+    margin: auto;
     max-width: 1440px;
+    background-color: white;
 }
 
 .grid {
@@ -65,7 +68,7 @@ body {
     font-size: 20px;
     font-style: italic;
     margin-top: 20px;
-    margin-right: 80px;
+    margin-right: 95px;
 }
 
 .card-img {
@@ -74,25 +77,87 @@ body {
     margin-bottom: 10px;
 }
 
+.form-container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
 .form-column {
     display: flex;
     flex-direction: column;
+    width: 429px;
     max-width: 429px;
-    /* align-items: center; */
+}
+
+.label-text {
+    font-weight: 600;
+    font-size: 16px;
 }
 
 input {
     height: 51px;
-    border-radius: 8px;
+    font-size: 16px;
     margin-top: 8px;
-    border-color: #727272;
-    /* border-top-color: #727272; */
+    margin-bottom: 28px;
+    padding-left: 8px;
+    border-radius: 8px;
     border-style: solid;
+    border-color: #727272;
+    border-width: 1px;
 }
+
+
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   margin: 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-expiry-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+.card-expiry-row-container {
+    display: flex;
+    gap: 8px;
+    /* width: 100%; */
+    /* width: 10px; */
+}
+
+.card-expiry-mm {
+    width: 30%;
+}
+
+.card-expiry-yyyy {
+    width: 70%;
+}
+
+.cvc-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+}
+
+.submit-btn {
+    height: 60px;
+    border-radius: 8px;
+    background-color: #151515;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.submit-btn:hover {
+    border-color: #9282F3;
 }
