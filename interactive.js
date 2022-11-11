@@ -9,11 +9,30 @@ cardholdername_input_field.addEventListener("input", (event) => {
   console.log(event);
 });
 
+// CARD NUMBER INTERACTIVE
 const cardnumber_input_field = document.getElementById("card-number");
-cardnumber_input_field.addEventListener("input", (event) => {
+cardnumber_input_field.addEventListener("keydown", (event) => {
+  var userinput = event.target.value;
+  if (userinput.length >= 16) {
+    event.preventDefault();
+  }
+
   var cardnumber_interactive = document.getElementById(
     "card-number-interactive"
   );
-  // add space every 4 letters]
-  //   var cardnumber_length = cardnumber_interactive.cardnumber_length;
+
+  console.log(event);
+
+  var index = 0;
+  var modified_userinput = "";
+  for (c in userinput) {
+    if (index == 4 || index == 8 || index == 12) {
+      modified_userinput += " " + userinput[c];
+    } else {
+      modified_userinput += userinput[c];
+    }
+    index += 1;
+  }
+
+  cardnumber_interactive.innerHTML = modified_userinput;
 });
