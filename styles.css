@@ -72,6 +72,9 @@ body {
     letter-spacing: 1px;
     color: white;
 }
+.card-expiry-row {
+    display: flex;
+}
 
 .card-expiry {
     position: absolute;

@@ -1,3 +1,4 @@
+// CARDHOLDER NAME
 const cardholdername_input_field = document.getElementById("card-holder-name");
 cardholdername_input_field.addEventListener("input", (event) => {
   var cardholdername_interactive = document.getElementById(
@@ -5,26 +6,19 @@ cardholdername_input_field.addEventListener("input", (event) => {
   );
 
   cardholdername_interactive.innerHTML = event.target.value;
-
-  console.log(event);
 });
 
 // CARD NUMBER INTERACTIVE
 const cardnumber_input_field = document.getElementById("card-number");
-cardnumber_input_field.addEventListener("keydown", (event) => {
-  var userinput = event.target.value;
-  if (userinput.length >= 16) {
-    event.preventDefault();
-  }
-
+cardnumber_input_field.addEventListener("input", (event) => {
   var cardnumber_interactive = document.getElementById(
     "card-number-interactive"
   );
 
-  console.log(event);
-
   var index = 0;
   var modified_userinput = "";
+  var userinput = event.target.value;
+
   for (c in userinput) {
     if (index == 4 || index == 8 || index == 12) {
       modified_userinput += " " + userinput[c];
@@ -35,4 +29,23 @@ cardnumber_input_field.addEventListener("keydown", (event) => {
   }
 
   cardnumber_interactive.innerHTML = modified_userinput;
+});
+
+// card expiry month
+const card_expiry_month_input_field = document.getElementById("card-expiry-mm");
+card_expiry_month_input_field.addEventListener("input", (event) => {
+  const card_expiry_month_interactive_field = document.getElementById(
+    "card-expiry-interactive-mm"
+  );
+
+  card_expiry_month_interactive_field.innerHTML = event.target.value;
+});
+
+const card_expiry_year_input_field =
+  document.getElementById("card-expiry-yyyy");
+card_expiry_year_input_field.addEventListener("input", (event) => {
+  const card_expiry_year_interactive_field = document.getElementById(
+    "card-expiry-interactive-yyyy"
+  );
+  card_expiry_year_interactive_field.innerHTML = event.target.value;
 });
