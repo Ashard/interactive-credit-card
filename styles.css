@@ -18,10 +18,14 @@ body {
 
 .grid {
     display: grid;
-    /* grid-template-columns: 40% auto; */
     grid-template-columns: minmax(435px, 40%) auto;
-
     height: 100vh;
+}
+
+@media screen and (max-width:900px){
+    .grid {
+        grid-template-columns: 100%;
+    }
 }
 
 .interactive-card-section {
@@ -39,6 +43,18 @@ body {
     width: fit-content;
     align-items: center;
     justify-content: flex-end;
+}
+
+@media screen and (max-width:900px) {
+    .card-back-container {
+        position: relative;
+        margin-bottom: -50px;
+        top: -50px;
+    }
+
+    .card-number-label {
+        margin-top: 20px;
+    }
 }
 
 .card-front-and-back-container {

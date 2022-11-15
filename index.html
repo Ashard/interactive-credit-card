@@ -16,7 +16,6 @@
             <section class="interactive-card-section">
             <div class="card-front-and-back-container">
                  <div class="card-front-container">
-                
                      <div class="card-number-container">
                          <p class="card-number" id="card-number-interactive">0000 0000 0000 0000</p>
                      </div>
@@ -40,7 +39,7 @@
          
                  <div class="card-back-container">
                      <img src="card-back.png" alt="" class="card-img">
-                     <p class="cvv">000</p>
+                     <p id="cvc-interactive" class="cvv">000</p>
                  </div>
              </div>
             </section>
@@ -48,18 +47,18 @@
             <section class="user-input-section">
                 <div class="form-container">
                     <form class="form-column">
-                        <label for="card-holder-name" class="label-text">CARDHOLDER NAME</label>
-                        <input id="card-holder-name" type="text" inputmode="text" placeholder="John Doe"/>
-        
-                        <label for="card-number" class="label-text">CARD NUMBER</label>
+                        <label class="card-number-label label-text" for="card-number" class="label-text">CARD NUMBER</label>
                         <input id="card-number" type="text" inputmode="numeric" pattern="\d{16}" title="Please enter your 16 digit card number" maxlength="16" placeholder="0000 0000 0000 0000"/>
                                             
+                        <label for="card-holder-name" class="label-text">CARDHOLDER NAME</label>
+                        <input id="card-holder-name" type="text" inputmode="text" placeholder="John Doe"/>
+                       
                         <div class="row">
                             <div class="card-expiry-container">
                                 <label for="card-expiry" class="label-text">CARD EXPIRY (MM/YYYY)</label>
                                 <div class="card-expiry-row-container">
-                                    <input id="card-expiry-mm" class="card-expiry-mm" type="text" inputmode="numeric" pattern="[0-9][0-9]" placeholder="MM" maxlength="2"/>          
-                                    <input id="card-expiry-yyyy" class="card-expiry-yyyy" type="text" inputput="numeric" pattern="[0-9][0-9][0-9][0-9]" placeholder="YYYY" maxlength="4"/>                                   
+                                    <input id="card-expiry-mm" class="card-expiry-mm" type="text" inputmode="numeric" pattern="[0-9][0-9]" title="Please enter card expiry month" placeholder="MM" maxlength="2"/>          
+                                    <input id="card-expiry-yyyy" class="card-expiry-yyyy" type="text" inputput="numeric" pattern="[0-9][0-9][0-9][0-9]" title="Please enter card expiry year"placeholder="YYYY" maxlength="4"/>                                   
                                 </div>                                
                             </div>
     

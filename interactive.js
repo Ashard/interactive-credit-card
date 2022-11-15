@@ -49,3 +49,10 @@ card_expiry_year_input_field.addEventListener("input", (event) => {
   );
   card_expiry_year_interactive_field.innerHTML = event.target.value;
 });
+
+//cvc
+const cvc_input_field = document.getElementById("cvc");
+cvc_input_field.addEventListener("input", (event) => {
+  const cvc_interactive = document.getElementById("cvc-interactive");
+  cvc_interactive.innerHTML = event.target.value;
+});
